@@ -20,8 +20,8 @@
         '  sudo docker stop server',
         '  sudo docker rm server',
         'fi',
-        'sudo docker pull {rbgud4226}/spring-cicd2:${GITHUB_SHA::7}',
-        'sudo docker tag {rbgud4226}/spring-cicd2${GITHUB_SHA::7} spring-cicd2',
-        'sudo docker run -d --name server -p 8080:8080 spring-cicd2'
+        'sudo docker pull {rbgud4226}/spring-cicd:${GITHUB_SHA::7}',
+        'sudo docker tag {rbgud4226}/spring-cicd${GITHUB_SHA::7} spring-cicd',
+        'sudo docker run -d --name server -p 8080:8080 spring-cicd'
       ]" \
       --output text
